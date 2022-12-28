@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="news">
+        <annotation>
+            <documentation>Root element for Hope Engine news xmls.</documentation>
+        </annotation>
+    </element>
+
+    <element name="cat">
+        <annotation>
+            <documentation>cat -- "Category" </documentation>
+        </annotation>
+        <complexType>
+            <attribute name="title" type="string" />
+            <attribute name="headerImage" type="string" />
+            <attribute name="icon" type="string" />
+        </complexType>
+    </element>
+</schema>
