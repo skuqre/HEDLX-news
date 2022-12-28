@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+
     <element name="news">
         <annotation>
             <documentation>Root element for Hope Engine news xmls.</documentation>
         </annotation>
-    </element>
-
-    <element name="cat">
-        <annotation>
-            <documentation>cat -- "Category" </documentation>
-        </annotation>
         <complexType>
-            <attribute name="title" type="string" />
-            <attribute name="headerImage" type="string" />
-            <attribute name="icon" type="string" />
+            <choice minOccurs="0" maxOccurs="unbounded">
+                <element name="cat" maxOccurs="unbounded" minOccurs="1">
+                    <annotation>
+                        <documentation>Category element</documentation>
+                    </annotation>
+                    <complexType mixed="true">
+                        <attribute name="title" type="string" />
+                        <attribute name="headerImage" type="string" />
+                        <attribute name="icon" type="string" />
+                    </complexType>
+                </element>
+            </choice>
         </complexType>
     </element>
 </schema>

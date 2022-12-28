@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
-<news>
-    <cat name="Funkin'">
-        lipsum blah blah blah...
+<news xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="news.xsd">
+    <cat title="Funkin'" headerImage="" icon="">
+        
     </cat>
-    <cat name="Hope Engine">
-        lipsum blah blah blah...
+    <cat title="Hope" headerImage="" icon="">
+
     </cat>
 </news>
